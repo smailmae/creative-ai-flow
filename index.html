@@ -3,98 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Tool</title>
+<title>AI Landing</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0d0d0d;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
 }
 
-section {
-  padding: 40px 20px;
-}
-
 .container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.box {
-  background: #1a1a1a;
+  max-width: 500px;
   padding: 20px;
-  border-radius: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 25px;
 }
 
 button {
   padding: 15px 30px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
   font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 22px; }
 }
 </style>
 </head>
 
 <body>
 
-<section>
-  <div class="container">
-    <h1>Main Heading</h1>
-    <p>Short description here</p>
-    <button onclick="location.href='page2.html'">Continue</button>
-  </div>
-</section>
-
-<section>
-  <div class="container grid-3">
-    <div class="box">Image</div>
-    <div class="box">Image</div>
-    <div class="box">Image</div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <p>Short hook text</p>
-  </div>
-</section>
-
-<section>
-  <div class="container grid-4">
-    <div class="box">Feature</div>
-    <div class="box">Feature</div>
-    <div class="box">Feature</div>
-    <div class="box">Feature</div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <p>Curiosity text</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <button onclick="location.href='page2.html'">Try Now</button>
-  </div>
-</section>
+<div class="container">
+  <h1>Create Anything You Imagine…</h1>
+  <p>Explore a new way to generate images without the usual limits.</p>
+  
+  <button onclick="location.href='page2.html'">
+    Enter
+  </button>
+</div>
 
 </body>
 </html>
