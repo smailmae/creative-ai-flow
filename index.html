@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tool</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+  <div class="container">
+    <h1>Main Heading</h1>
+    <p>Short description here</p>
+    <button onclick="location.href='page2.html'">Continue</button>
+  </div>
+</section>
+
+<section>
+  <div class="container grid-3">
+    <div class="box">Image</div>
+    <div class="box">Image</div>
+    <div class="box">Image</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p>Short hook text</p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid-4">
+    <div class="box">Feature</div>
+    <div class="box">Feature</div>
+    <div class="box">Feature</div>
+    <div class="box">Feature</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p>Curiosity text</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <button onclick="location.href='page2.html'">Try Now</button>
+  </div>
+</section>
+
+</body>
+</html>
