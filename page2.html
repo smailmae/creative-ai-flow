@@ -3,63 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Continue</title>
+<title>Gallery</title>
 
 <style>
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background: #0d0d0d;
   color: white;
   text-align: center;
-  font-family: Arial;
 }
 
-section {
-  padding: 40px 20px;
-}
-
-.box {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
+.container {
+  padding: 30px 15px;
+  max-width: 900px;
   margin: auto;
 }
 
-button {
-  padding: 15px 30px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
+h2 {
+  margin-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 </style>
 </head>
 
 <body>
 
-<section>
-  <h2>Short Heading</h2>
-  <p>Explanation text</p>
-</section>
+<div class="container">
+  <h2>See What’s Possible</h2>
 
-<section>
-  <div class="box">
-    <p>Some info or steps</p>
+  <div class="grid">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
   </div>
-</section>
-
-<section>
-  <ul style="list-style: none; padding: 0;">
-    <li>Point 1</li>
-    <li>Point 2</li>
-    <li>Point 3</li>
-  </ul>
-</section>
-
-<section>
-  <button onclick="location.href='YOUR_AFFILIATE_LINK_HERE'">
-    Continue
-  </button>
-</section>
+</div>
 
 </body>
 </html>
